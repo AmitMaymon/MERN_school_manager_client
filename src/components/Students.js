@@ -21,7 +21,7 @@ function Students(props) {
     useEffect(() => {
         const getData = async () => {
             const data = await utils.getAll()
-            console.log(data,'activeComp');
+            console.log(data, 'activeComp');
             setStudents(data)
 
         }
@@ -41,8 +41,9 @@ function Students(props) {
     }
     //TODO - When pressing delete it doesnt update the state for some reason
     const handleDelete = async (id) => {
-        utils.deleteStudent(id)
+        await utils.deleteStudent(id)
         setActiveComponent('delete')
+
     }
     const handleAdd = () => {
         setActiveComponent('add')
