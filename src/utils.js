@@ -2,7 +2,7 @@ import axios from 'axios'
 
 
 
-const url = 'http://localhost:8000/students'
+const url = 'https://mern-project-1-server.onrender.com/students' || 'http://localhost:8000/students'
 
 const getAll = async () => {
     console.log('getall');
