@@ -8,15 +8,6 @@ function Students(props) {
     const [updateClicked, setUpdateClicked] = useState(false)
     const [addClicked, setAddClicked] = useState(false)
     const [activeComponent, setActiveComponent] = useState(null)
-    // useEffect(() => {
-    //     const getData = async () => {
-    //         const data = await utils.getAll()
-    //         console.log(data);
-    //         setStudents(data)
-
-    //     }
-    //     getData()
-    // }, [])
 
     useEffect(() => {
         const getData = async () => {
@@ -39,7 +30,7 @@ function Students(props) {
         setStudentId(id)
         setActiveComponent('update')
     }
-    //TODO - When pressing delete it doesnt update the state for some reason
+
     const handleDelete = async (id) => {
         await utils.deleteStudent(id)
         setActiveComponent('delete')
