@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+# School Manager Platform
+
+
+Hey!
+This is web app is a school managing platform.
+It is built in the MERN stack.
+
+This repo contains all of the frontend code.
+there is another repo for the backend. 
+
+let me know what you think :)
+
+ ### there is a live demo here:
+https://school-manager-react.netlify.app
+(if you log in and see no data wait a 2-3 minutes and try again,
+the server might have to boot up due to inactivity)
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
